@@ -20,3 +20,17 @@ const collectOdds = (nums) => {
 
   return result;
 };
+
+const collectOdds2 = (num) => {
+  if (num <= 0) return [];
+  num--;
+
+  const arr = collectOdds2(num);
+
+  if (num % 2 !== 0) arr.push(num);
+
+  return arr
+};
+
+
+const collectOddsPureRecursion = (nums)

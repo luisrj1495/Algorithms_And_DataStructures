@@ -1,11 +1,12 @@
 const factorial = (num) => {
- if (num <= 1) return 1;
+  if (num < 0) return 0;
+  if (num <= 1) return 1;
 
- const newNum = num - 1
+  const newNum = num - 1;
 
- const v = factorial(newNum);
+  const v = factorial(newNum);
 
- return num * v;
+  return num * v;
 };
 
 const factorial2 = (num) => {
