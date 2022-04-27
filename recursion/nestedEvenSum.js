@@ -1,4 +1,17 @@
-const nestedEvenSum = (obj) => {};
+const nestedEvenSum = (obj) => {
+  let sum = 0;
+
+  const helper = (data) => {
+    for (let value of Object.values(data)) {
+      if (typeof value === "number" && value % 2 == 0) sum += value;
+      if (typeof value === "object" && data !== null) helper(value);
+    }
+  };
+
+  helper(obj);
+
+  return sum;
+};
 
 var obj1 = {
   outer: 2,
