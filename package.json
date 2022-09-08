@@ -1,0 +1,14 @@
+{
+  "name": "AlgotihmsAndDataStructures",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/luisrj1495/Algorithms_And_DataStructures.git",
+  "author": "Luis Ernesto Ruiz Jaramillo <luisrj1495@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^4.8.2"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1"
+  }
+}
