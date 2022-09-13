@@ -55,3 +55,4 @@ db.patient.find({age: {$gt: 50}})
 
 
 db.patient.deleteMany({history:{$elemMatch: {disease: "cold"}} })
+db.patient.deleteMany({"history.disease": "cold" })
